@@ -164,11 +164,11 @@ P = 8333.33
 If the savings is compound:
 
 ```math
-A = P(1 + r/n)^(nt)
+A = P(1 + r/n)^nt
 ```
 
 ```math
-10 000 = P(1 + 0.04/4)^(4*5)
+10 000 = P(1 + 0.04/4)^4*5
 ```
 
 ```math
