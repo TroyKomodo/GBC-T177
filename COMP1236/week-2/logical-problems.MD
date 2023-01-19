@@ -4,9 +4,9 @@
 
 Essentially we are required to calculate the volume of shapes made up from unit cubes.
 
-a) Is a 3x3x3 Square with no gaps, therefore there are 27 cubes.
+a) Is a 3x3x3 Square with no gaps, therefore there are `27 cubes`.
 
-b) Is half a 4x3x4 Square, therefore there are 24 cubes.
+b) Is half a 4x3x4 Square, therefore there are `24 cubes`.
 
 ## The second problem is called `Bill the Farmer`
 
@@ -27,7 +27,7 @@ So the solution is:
 ## The 3rd problem is called `Rephrasing`
 
 Basically, its asking you to compute 2/3 of 1/2.
-Essentially, this is 1/3.
+Essentially, this is `1/3`.
 
 ## The 4th problem is called `Who ate the pie?`
 
@@ -44,7 +44,8 @@ To which they respond:
 
 It happens that the first case I tested was right.
 What if child 1 is lying. Well then child 2 would be telling the truth and child 3 is then lying. Which fits our parameters.
-Therefore child 1 ate the pie.
+
+Therefore `child 1 ate the pie`.
 
 However, there is another case.
 If child 1 is not lying, then child 2 will be lying & child 3 would not be lying. however this does not work since there must alway be 2 lies.
@@ -53,7 +54,7 @@ If child 1 is not lying, then child 2 will be lying & child 3 would not be lying
 
 We are given a problem where 2 trains are moving towards eachother, they are 100 miles apart and the distance between them is closing at 100miles/hour.
 The question broken down is asking how far the bird will travel before the trains collide. The bird travels at 90 miles per hour.
-Therefore the answer is 90miles.
+Therefore the answer is `90 miles`.
 
 ## The 6th problem is an extension on the 5th also called `Bird Train`
 
@@ -78,11 +79,11 @@ Given a sequencw
 Well this sequence is linear in the form of
 `T(n) = 4n + 3`
 
-Therefore the 10th term will be: 43
+Therefore the 10th term will be: `43`
 
-The 50th term is: 203
+The 50th term is: `203`
 
-The nth term is: 4n + 3
+The nth term is: `4n + 3`
 
 ## The 8th problem is called `Quick Adding`
 
@@ -150,7 +151,12 @@ So if it is simple:
 
 ```math
 A = P(1 + rt)
+```
+
+```math
 10 000 = P(1 + 0.04 * 5)
+
+```math
 P = 8333.33
 ```
 
@@ -158,7 +164,12 @@ If the savings is compound:
 
 ```math
 A = P(1 + r/n)^(nt)
+```
+
+```math
 10 000 = P(1 + 0.04/4)^(4*5)
+
+```math
 P = 8195.44
 ```
 
@@ -174,7 +185,7 @@ And its just
 
 This results in `2047`
 
-Its also handy to notice that this results in one less than 2 ^ 11.
+Its also handy to notice that this results in one less than `2 ^ 11`.
 
 It might be general that `Sigma(n = 0, m) (z^(m-n)) = z^(m + 1) - 1`
 
