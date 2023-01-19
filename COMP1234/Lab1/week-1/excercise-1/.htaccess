@@ -1,0 +1,32 @@
+# DEFAULTS
+ServerSignature Off
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
+SetEnv America/Toronto
+SetEnv SERVER_ADMIN maziar@webrun.ca
+
+# Rewrites
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteCond %{THE_REQUEST} ^(GET|HEAD)\ ([^\ ]+)
+RewriteRule ^ https://%{HTTP_HOST}%2 [L,R=301]
+RewriteBase /
+
+# Deny access to .htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+#Options All -Indexes
+
+#DONT CHANGE THE CODE BELOW
+#START
+AuthUserFile /home/w3447709/.htpasswd
+AuthType Basic
+AuthName "GBLearn"
+<Limit GET>
+require valid-user
+</Limit>
+#END
+
